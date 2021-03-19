@@ -76,7 +76,7 @@ body {
   color: #fff;
   cursor: pointer;
   background-image: linear-gradient(to right, #7633a4, #250d65);
-  padding: 2.4rem 7.5rem;
+  padding: 2.2rem 7.8rem;
   font-size: 1.4rem;
   outline: none;
   display: inline-block; }
@@ -129,7 +129,7 @@ body {
 .service__content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem; }
+  margin: 3rem 0; }
 
 .service__item {
   width: calc((100% - 2 * 3rem) / 3); }
@@ -140,6 +140,18 @@ body {
 
 .service__text {
   margin-top: 2rem; }
+
+.works {
+  height: 65rem;
+  background-image: linear-gradient(to right, transparent 34%, #f0f0f0 34%);
+  display: flex;
+  align-items: center; }
+  .works__inner {
+    max-width: 34rem;
+    margin-left: 7rem;
+    text-align: center; }
+  .works__text {
+    margin: 2.5rem 0 3.5rem; }
 
 .header {
   height: 100vh;
