@@ -21,3 +21,21 @@ body {
 		letter-spacing: 2.4px;
 	}
 }
+
+.heading-secondary {
+	display: flex;
+	flex-direction: column;
+	color: $color-purple;
+	// text-align: center;
+
+	&--main {
+		text-transform: uppercase;
+		font-size: 3.6rem;
+	}
+
+	&--sub {
+		font-size: 1.3rem;
+		align-self: center;
+		margin-top: -1rem;
+	}
+}
