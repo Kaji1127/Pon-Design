@@ -1,14 +1,14 @@
 {
-  "name": "pon-design",
-  "version": "1.0.0",
-  "description": "",
-  "main": "js/script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^5.0.0"
-  }
+	"name": "pon-design",
+	"version": "1.0.0",
+	"description": "",
+	"main": "js/script.js",
+	"scripts": {
+		"watch:sass": "node-sass sass/main.scss css/style.css -w"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^5.0.0"
+	}
 }
