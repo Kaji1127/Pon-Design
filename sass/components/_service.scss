@@ -1,0 +1,18 @@
+.service {
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 3rem;
+	}
+	&__item {
+		width: calc((100% - 2 * #{$gutter}) / 3);
+	}
+
+	&__title {
+		text-align: center;
+		margin-top: 2.5rem;
+	}
+	&__text {
+		margin-top: 2rem;
+	}
+}

@@ -25,6 +25,10 @@ html {
 body {
   box-sizing: border-box; }
 
+img {
+  max-width: 100%;
+  display: block; }
+
 a {
   text-decoration: none; }
 
@@ -52,14 +56,17 @@ body {
 .heading-secondary {
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: #391e88; }
   .heading-secondary--main {
     text-transform: uppercase;
     font-size: 3.6rem; }
   .heading-secondary--sub {
     font-size: 1.3rem;
-    align-self: center;
     margin-top: -1rem; }
+
+.u-text-center {
+  text-align: center; }
 
 .btn {
   text-transform: uppercase;
@@ -67,12 +74,19 @@ body {
   border: none;
   font-weight: 700;
   color: #fff;
-  cursor: pointer; }
+  cursor: pointer;
+  background-image: linear-gradient(to right, #7633a4, #250d65);
+  padding: 2.4rem 7.5rem;
+  font-size: 1.4rem;
+  outline: none;
+  display: inline-block; }
   .btn--header {
     background-color: transparent;
+    background-image: none;
     margin-top: 5rem;
     padding: 2.4rem 7.2rem;
-    border: 1px solid #fff; }
+    border: 1px solid #fff;
+    font-size: 1.5rem; }
 
 .scroll {
   text-transform: uppercase;
@@ -112,6 +126,21 @@ body {
     background-color: #e8e8e8;
     border-radius: 50px; }
 
+.service__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem; }
+
+.service__item {
+  width: calc((100% - 2 * 3rem) / 3); }
+
+.service__title {
+  text-align: center;
+  margin-top: 2.5rem; }
+
+.service__text {
+  margin-top: 2rem; }
+
 .header {
   height: 100vh;
   position: relative;
@@ -148,3 +177,7 @@ body {
 .section-news {
   max-width: 92rem;
   margin: 7rem auto 0; }
+
+.section-service {
+  max-width: 110rem;
+  margin: 14rem auto; }

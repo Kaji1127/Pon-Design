@@ -5,11 +5,18 @@
 	font-weight: 700;
 	color: $color-white;
 	cursor: pointer;
+	background-image: linear-gradient(to right, $bg-purple-light, $bg-purple-dark);
+	padding: 2.4rem 7.5rem;
+	font-size: 1.4rem;
+	outline: none;
+	display: inline-block;
 
 	&--header {
 		background-color: transparent;
+		background-image: none;
 		margin-top: 5rem;
 		padding: 2.4rem 7.2rem;
 		border: 1px solid #fff;
+		font-size: $default-font-size;
 	}
 }
