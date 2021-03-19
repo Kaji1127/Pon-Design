@@ -1,0 +1,26 @@
+.news {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+	&__item *:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	&__label {
+		width: 8.2rem;
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: 700;
+		padding: 0.5rem 0;
+		background-color: $bg-grey-1;
+		border-radius: 50px;
+	}
+}
