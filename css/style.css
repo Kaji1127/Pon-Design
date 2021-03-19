@@ -1,0 +1,110 @@
+@keyframes scrollDown {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0; }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0; }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%; }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+body {
+  font-family: 'Montserrat', 'Hiragino Kaku Gothic ProN', sans-serif;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #333333;
+  font-size: 1.5rem; }
+
+.heading-primary {
+  text-transform: uppercase;
+  color: #fff; }
+  .heading-primary--main {
+    display: block;
+    font-weight: 700;
+    font-size: 7.2rem; }
+  .heading-primary--sub {
+    font-size: 2.4rem;
+    letter-spacing: 2.4px; }
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer; }
+  .btn--header {
+    background-color: transparent;
+    margin-top: 5rem;
+    padding: 2.4rem 7.2rem;
+    border: 1px solid #fff; }
+
+.scroll {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  right: 2.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  writing-mode: vertical-lr;
+  letter-spacing: 2px; }
+  .scroll__line {
+    width: 1px;
+    height: 8rem;
+    margin-top: 10px;
+    background-color: #fff;
+    display: inline-block;
+    animation: scrollDown 2s cubic-bezier(1, 0, 0, 1) infinite; }
+
+.header {
+  height: 100vh;
+  position: relative;
+  background-image: url(../img/hero.jpg);
+  background-size: cover; }
+  .header__content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0 3rem; }
+  .nav__links {
+    display: flex;
+    align-items: center; }
+  .nav__item {
+    font-weight: 700;
+    margin-left: 3rem; }
+  .nav__link {
+    color: #fff;
+    text-transform: uppercase; }

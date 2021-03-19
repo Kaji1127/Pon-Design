@@ -1,0 +1,21 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 90px;
+	padding: 0 3rem;
+	// background-color: orangered;
+
+	&__links {
+		display: flex;
+		align-items: center;
+	}
+	&__item {
+		font-weight: 700;
+		margin-left: 3rem;
+	}
+	&__link {
+		color: $color-white;
+		text-transform: uppercase;
+	}
+}
