@@ -88,6 +88,30 @@ body {
     border: 1px solid #fff;
     font-size: 1.5rem; }
 
+.company {
+  margin-top: 14rem;
+  margin-bottom: 5.5rem;
+  text-align: center;
+  background-image: url(../img/bg-face.png);
+  background-repeat: no-repeat;
+  background-position: top center; }
+  .company__goal {
+    position: relative;
+    font-size: 4rem;
+    margin-top: 4rem;
+    display: inline-block; }
+    .company__goal::after {
+      content: '';
+      width: 103%;
+      height: 1.2rem;
+      background-color: #f5f534;
+      position: absolute;
+      bottom: 1.2rem;
+      left: -1.5%;
+      z-index: -1; }
+  .company__text-box {
+    margin: 4rem 0 3rem; }
+
 .scroll {
   text-transform: uppercase;
   position: absolute;
@@ -152,6 +176,8 @@ body {
     text-align: center; }
   .works__text {
     margin: 2.5rem 0 3.5rem; }
+  .works__img {
+    box-shadow: 0 0.2rem 0.4rem rgba(51, 51, 51, 0.4); }
 
 .header {
   height: 100vh;
@@ -183,7 +209,7 @@ body {
     text-transform: uppercase; }
 
 .container {
-  max-width: 126rem;
+  max-width: 130rem;
   margin: 0 auto; }
 
 .section-news {
@@ -193,3 +219,11 @@ body {
 .section-service {
   max-width: 110rem;
   margin: 14rem auto; }
+
+.section-works {
+  max-width: 126rem;
+  margin: 0 auto 6rem; }
+
+.section-company {
+  height: 60rem;
+  background-image: url(../img/bg-circle.png); }

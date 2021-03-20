@@ -2,6 +2,7 @@
 	height: 65rem;
 	background-image: linear-gradient(to right, transparent 34%, $bg-grey-2 34%);
 	display: flex;
+	// justify-content: center;
 	align-items: center;
 
 	&__inner {
@@ -11,5 +12,8 @@
 	}
 	&__text {
 		margin: 2.5rem 0 3.5rem;
+	}
+	&__img {
+		box-shadow: 0 0.2rem 0.4rem rgba($color-black, 0.4);
 	}
 }
