@@ -1,6 +1,10 @@
 .container {
 	max-width: 130rem;
 	margin: 0 auto;
+
+	@include respond(tab) {
+		padding: 0 2rem;
+	}
 }
 
 .section-news {
@@ -11,6 +15,11 @@
 .section-service {
 	max-width: 110rem;
 	margin: 14rem auto;
+
+	@include respond(tab) {
+		margin-top: 8rem;
+		margin-bottom: 8rem;
+	}
 }
 
 .section-works {
@@ -27,6 +36,10 @@
 	padding-top: 14rem;
 	padding-bottom: 5.5rem;
 	margin-bottom: 6.5rem;
+
+	@include respond(tab) {
+		padding-top: 4rem;
+	}
 }
 
 .section-recruit {

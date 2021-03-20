@@ -3,9 +3,21 @@
 		display: flex;
 		justify-content: space-between;
 		margin: 3rem 0;
+
+		@include respond(tab-port-sm) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__item {
+		display: flex;
+		flex-direction: column;
 		width: calc((100% - 2 * #{$gutter}) / 3);
+		@include respond(tab-port-sm) {
+			align-self: center;
+			width: 100%;
+			margin-bottom: 4rem;
+		}
 	}
 
 	&__title {
@@ -14,5 +26,6 @@
 	}
 	&__text {
 		margin-top: 2rem;
+		align-self: center;
 	}
 }

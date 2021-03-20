@@ -13,21 +13,10 @@
 	}
 
 	&__goal {
-		position: relative;
+		background-image: linear-gradient(to bottom, transparent 70%, $bg-yellow 70%);
 		font-size: 4rem;
 		margin-top: 4rem;
-		display: inline-block;
-
-		&::after {
-			content: '';
-			width: 103%;
-			height: 1.2rem;
-			background-color: $bg-yellow;
-			position: absolute;
-			bottom: 1.2rem;
-			left: -1.5%;
-			z-index: -1;
-		}
+		display: inline;
 	}
 	&__text-box {
 		margin: 4rem 0 3rem;
