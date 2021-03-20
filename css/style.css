@@ -128,7 +128,8 @@ body {
   text-align: center;
   background-image: url(../img/bg-face.png);
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-position: top center;
+  padding-bottom: 2rem; }
   @media only screen and (max-width: 80em) {
     .company {
       background-size: contain; } }

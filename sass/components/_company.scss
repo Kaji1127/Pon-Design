@@ -4,6 +4,7 @@
 	background-image: url(../img/bg-face.png);
 	background-repeat: no-repeat;
 	background-position: top center;
+	padding-bottom: 2rem;
 	// background-size: cover;
 	@include respond(tab-land) {
 		background-size: contain;
