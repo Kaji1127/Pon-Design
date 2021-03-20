@@ -5,6 +5,12 @@
 	background-repeat: no-repeat;
 	background-position: top center;
 	// background-size: cover;
+	@include respond(tab-land) {
+		background-size: contain;
+	}
+	@include respond(tab-port-sm) {
+		background-image: none;
+	}
 
 	&__goal {
 		position: relative;
