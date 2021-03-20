@@ -110,6 +110,12 @@ body {
   .company__text-box {
     margin: 4rem 0 3rem; }
 
+.contact__text-box {
+  text-align: center; }
+
+.contact__text {
+  margin: 3.5rem 0 3rem; }
+
 .scroll {
   text-transform: uppercase;
   position: absolute;
@@ -246,3 +252,7 @@ body {
   max-width: 110rem;
   margin: 0 auto 10rem;
   background-color: #f7f7f7; }
+
+.section-contact {
+  background-color: #f7f7f7;
+  padding: 9rem 0 8rem; }
