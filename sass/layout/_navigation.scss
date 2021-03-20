@@ -9,6 +9,9 @@
 	&__links {
 		display: flex;
 		align-items: center;
+		&:last-child {
+			justify-content: center;
+		}
 	}
 	&__item {
 		font-weight: 700;

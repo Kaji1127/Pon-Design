@@ -208,6 +208,16 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.footer {
+  background-color: #120e19;
+  text-align: center;
+  padding: 6rem 0; }
+  .footer__right {
+    display: inline-block;
+    font-size: 1rem;
+    color: #a798b7;
+    margin-top: 2.5rem; }
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -217,6 +227,8 @@ body {
   .nav__links {
     display: flex;
     align-items: center; }
+    .nav__links:last-child {
+      justify-content: center; }
   .nav__item {
     font-weight: 700;
     margin-left: 3rem; }
