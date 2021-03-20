@@ -21,4 +21,26 @@
 		color: $color-white;
 		text-transform: uppercase;
 	}
+	&__line {
+		position: relative;
+		width: 3rem;
+		height: 2px;
+		background-color: $color-white;
+		display: none;
+
+		&::before,
+		&::after {
+			content: '';
+			width: 3rem;
+			height: 2px;
+			background-color: $color-white;
+			position: absolute;
+		}
+		&::before {
+			top: -0.7rem;
+		}
+		&::after {
+			top: 0.7rem;
+		}
+	}
 }

@@ -259,6 +259,22 @@ body {
   .nav__link {
     color: #fff;
     text-transform: uppercase; }
+  .nav__line {
+    position: relative;
+    width: 3rem;
+    height: 2px;
+    background-color: #fff;
+    display: none; }
+    .nav__line::before, .nav__line::after {
+      content: '';
+      width: 3rem;
+      height: 2px;
+      background-color: #fff;
+      position: absolute; }
+    .nav__line::before {
+      top: -0.7rem; }
+    .nav__line::after {
+      top: 0.7rem; }
 
 .container {
   max-width: 130rem;
