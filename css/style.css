@@ -203,6 +203,8 @@ body {
     .news__description {
       margin-top: 1.5rem;
       width: 90%; } }
+  .news__link {
+    color: inherit; }
 
 .recruit {
   display: flex;
