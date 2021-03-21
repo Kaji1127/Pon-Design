@@ -43,8 +43,12 @@
 		}
 
 		@include respond(tab-port-sm) {
-			max-width: 90%;
+			max-width: 100%;
 			margin: 0 auto;
+		}
+
+		@include respond(tab) {
+			width: 80%;
 		}
 	}
 }

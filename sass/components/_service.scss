@@ -15,7 +15,7 @@
 		width: calc((100% - 2 * #{$gutter}) / 3);
 		@include respond(tab-port-sm) {
 			align-self: center;
-			width: 100%;
+			width: 85%;
 			margin-bottom: 4rem;
 		}
 	}
