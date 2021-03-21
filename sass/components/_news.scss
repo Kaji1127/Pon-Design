@@ -6,7 +6,7 @@
 	@include respond(tab) {
 		flex-direction: column;
 		align-items: center;
-		width: 80%;
+		width: 100%;
 		margin: 0 auto;
 	}
 
@@ -17,17 +17,20 @@
 	}
 
 	&__item {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: 8.8rem 8.2rem auto;
+		column-gap: 2rem;
 		width: 100%;
-		margin: 0 auto;
 		&:not(:last-child) {
-			margin-bottom: 15px;
+			margin-bottom: 20px;
+		}
+
+		@include respond(phone) {
+			row-gap: 1rem;
 		}
 	}
-	&__item *:not(:last-child) {
-		margin-right: 20px;
+	&__date {
+		justify-self: center;
 	}
 
 	&__label {
@@ -38,12 +41,13 @@
 		padding: 0.5rem 0;
 		background-color: $bg-grey-1;
 		border-radius: 50px;
+		align-self: flex-start;
 	}
 	&__description {
-		@include respond(tab) {
-			margin-top: 1.5rem;
-			// display: inline-block;
-			width: 90%;
+		// width: 70%;
+		align-self: flex-start;
+		@include respond(phone) {
+			grid-column: 1 / 4;
 		}
 	}
 	&__link {

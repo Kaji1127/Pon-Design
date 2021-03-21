@@ -68,3 +68,17 @@ body {
 		margin-top: -1rem;
 	}
 }
+
+.heading-tertiary {
+	color: $color-white;
+	text-transform: uppercase;
+
+	&--main {
+		display: block;
+		font-size: 3.6rem;
+	}
+	&--sub {
+		display: block;
+		font-size: 1.4rem;
+	}
+}

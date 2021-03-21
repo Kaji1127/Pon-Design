@@ -1,0 +1,14 @@
+.page-header {
+	position: relative;
+	height: 24rem;
+	background-image: url(../img/hero.jpg);
+	background-position: right center;
+
+	&__content {
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+	}
+}
