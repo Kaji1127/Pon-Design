@@ -4,29 +4,41 @@
 	display: flex;
 	align-items: center;
 	padding-left: 16rem;
+	flex-wrap: nowrap;
 
 	@include respond(tab-land) {
-		padding-left: 8rem;
+		padding: 0 8rem;
 	}
 	@include respond(tab-port) {
-		padding-left: 6rem;
+		padding: 0 6rem;
 	}
 	@include respond(tab-port-sm) {
-		padding-left: 4rem;
+		padding: 0 4rem;
 	}
 	@include respond(tab) {
-		padding-left: 2rem;
+		padding: 0 2rem;
 	}
 
 	&__item {
 		font-size: 1.2rem;
 		text-transform: uppercase;
+		white-space: nowrap;
+
+		&:last-child {
+			text-overflow: ellipsis;
+
+			overflow: hidden;
+		}
 
 		&:not(:last-child)::after {
 			content: '>';
 			display: inline-block;
 			padding: 0 1.5rem;
 			font-size: 1.2rem;
+
+			@include respond(phone) {
+				padding: 0.5rem;
+			}
 		}
 	}
 

@@ -7,6 +7,9 @@
 	}
 
 	@include respond(tab) {
+		padding: 0 6rem;
+	}
+	@include respond(phone) {
 		padding: 0 2rem;
 	}
 }
@@ -63,4 +66,9 @@
 	background-color: $bg-grey-4;
 	padding: 9rem 0 8rem;
 	margin-top: 10rem;
+
+	@include respond(tab) {
+		margin-top: 6rem;
+		padding-top: 6rem;
+	}
 }

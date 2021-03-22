@@ -18,20 +18,26 @@
 
 	&__item {
 		display: grid;
-		grid-template-columns: 8.8rem 8.2rem auto;
+		grid-template-columns: 8.8rem 8.2rem 1fr;
 		column-gap: 2rem;
 		width: 100%;
 		&:not(:last-child) {
 			margin-bottom: 20px;
 		}
 
-		@include respond(phone) {
+		@include respond(tab) {
 			row-gap: 1rem;
 		}
 	}
 	&__date {
+		// padding-top: 0.5rem;
+
 		justify-self: center;
-		align-self: center;
+		align-self: flex-start;
+
+		@include respond(tab) {
+			align-self: center;
+		}
 	}
 
 	&__label {
@@ -46,12 +52,18 @@
 	}
 	&__description {
 		// width: 70%;
+		// padding-top: 0.5rem;
 		align-self: flex-start;
-		@include respond(phone) {
+		@include respond(tab) {
 			grid-column: 1 / 4;
+			margin-left: 0.5rem;
 		}
 	}
 	&__link {
 		color: inherit;
+
+		&:hover {
+			color: $color-purple;
+		}
 	}
 }
