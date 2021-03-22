@@ -1,0 +1,48 @@
+.service-page {
+	max-width: 110rem;
+	margin: 7rem auto 10rem;
+	display: grid;
+	row-gap: 6rem;
+
+	@include respond(tab-port) {
+		max-width: 90rem;
+	}
+
+	@include respond(tab) {
+		max-width: 65rem;
+		padding: 0 2rem;
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		column-gap: 5rem;
+
+		@include respond(tab) {
+			grid-template-columns: 1fr;
+			column-gap: 0;
+			row-gap: 5rem;
+		}
+	}
+	&__img {
+		@include respond(tab) {
+			justify-self: center;
+		}
+	}
+	&__text-box {
+		text-align: justify;
+	}
+
+	&__title {
+		@include respond(tab) {
+			text-align: center;
+		}
+	}
+	&__text {
+		&:first-of-type {
+			@include respond(tab) {
+				margin-top: 1.5rem;
+			}
+		}
+	}
+}
