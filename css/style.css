@@ -202,7 +202,8 @@ body {
       .news__item {
         row-gap: 1rem; } }
   .news__date {
-    justify-self: center; }
+    justify-self: center;
+    align-self: center; }
   .news__label {
     width: 8.2rem;
     text-align: center;
@@ -337,8 +338,69 @@ body {
       padding: 0 1.5rem;
       font-size: 1.2rem; }
   .breadcrumb__link {
-    color: #391e88;
     font-weight: 500; }
+  .breadcrumb__item:last-child .breadcrumb__link {
+    color: #333333; }
+
+.article {
+  max-width: 75rem;
+  margin: 7rem auto 11rem; }
+  .article__title {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem; }
+  .article__img-box {
+    margin-bottom: 6rem; }
+  .article__headline-box {
+    margin-bottom: 4rem; }
+  .article__headline {
+    font-size: 2.4rem;
+    padding-left: 2rem;
+    position: relative; }
+    .article__headline::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background-color: #391e88;
+      border-radius: 100px; }
+  .article__subheading {
+    font-size: 1.8rem; }
+  .article__text {
+    margin-top: 3rem; }
+    .article__text:first-of-type {
+      margin-top: 2rem; }
+  .article__sns {
+    display: grid;
+    max-width: 40rem;
+    grid-template-columns: 10rem 6rem 9rem auto;
+    column-gap: 1rem;
+    margin-top: 4rem; }
+  .article__icon-box {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    cursor: pointer; }
+    .article__icon-box--fb, .article__icon-box--share {
+      background-color: #1877f2; }
+    .article__icon-box--tw {
+      background-color: #1da1f2; }
+    .article__icon-box--book {
+      background-color: #39a4de; }
+  .article__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #fff;
+    margin-right: 4px; }
+  .article__count {
+    margin-left: 10px; }
 
 .header {
   height: 100vh;

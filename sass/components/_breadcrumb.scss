@@ -31,7 +31,11 @@
 	}
 
 	&__link {
-		color: $color-purple;
 		font-weight: 500;
+		// color: #000;
+	}
+
+	&__item:last-child &__link {
+		color: $color-black;
 	}
 }
