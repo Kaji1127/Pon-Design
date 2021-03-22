@@ -4,13 +4,18 @@
 	background-image: url(../img/bg-face.png);
 	background-repeat: no-repeat;
 	background-position: top center;
-	padding-bottom: 2rem;
+	padding-bottom: 10rem;
 	// background-size: cover;
 	@include respond(tab-land) {
 		background-size: contain;
+		padding-bottom: 8rem;
 	}
 	@include respond(tab-port-sm) {
 		background-image: none;
+		padding-bottom: 6rem;
+	}
+	@include respond(tab) {
+		padding-bottom: 2rem;
 	}
 
 	&__goal {
@@ -21,5 +26,49 @@
 	}
 	&__text-box {
 		margin: 4rem 0 3rem;
+
+		@include respond(tab) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__text {
+		line-height: 1.8;
+	}
+	&__content {
+		display: grid;
+		// justify-items: center;
+		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+		margin: 6rem auto 0;
+		max-width: 110rem;
+		width: 100%;
+		column-gap: 5rem;
+		// padding: 0 2rem;
+
+		@include respond(tab-port-sm) {
+			padding: 0 2rem;
+		}
+		@include respond(tab) {
+			padding: 0;
+		}
+
+		// @include respond(tab) {
+		// 	padding: 0 2rem;
+		// }
+	}
+
+	&__img {
+		@include respond(tab) {
+			margin-bottom: 3rem;
+		}
+	}
+
+	&__text-content {
+		display: grid;
+		align-items: flex-start;
+	}
+
+	&__text-content &__text {
+		margin-bottom: 4rem;
 	}
 }
