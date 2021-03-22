@@ -637,9 +637,11 @@ body {
       justify-self: center; } }
   .service-page__text-box {
     text-align: justify; }
-  @media only screen and (max-width: 48em) {
-    .service-page__title {
-      text-align: center; } }
+  .service-page__title {
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 48em) {
+      .service-page__title {
+        text-align: center; } }
   @media only screen and (max-width: 48em) {
     .service-page__text:first-of-type {
       margin-top: 1.5rem; } }
