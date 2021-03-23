@@ -844,7 +844,8 @@ body {
 
 .contact-page {
   max-width: 110rem;
-  padding: 7rem 0; }
+  padding: 7rem 0;
+  margin: 0 auto; }
   @media only screen and (max-width: 56.25em) {
     .contact-page {
       padding: 5rem 4rem; } }
