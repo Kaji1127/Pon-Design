@@ -42,7 +42,8 @@ img {
   display: block; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff; }
 
 li {
   list-style: none; }
@@ -383,6 +384,8 @@ body {
       @media only screen and (max-width: 37.5em) {
         .breadcrumb__item:not(:last-child)::after {
           padding: 0.5rem; } }
+  .breadcrumb__link {
+    color: #391e88; }
   .breadcrumb__item:last-child .breadcrumb__link {
     color: #333333; }
 
