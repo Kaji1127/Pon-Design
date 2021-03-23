@@ -12,6 +12,14 @@
     transform: scale(1, 0);
     transform-origin: 0 100%; } }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 *,
 *::after,
 *::before {
@@ -486,6 +494,11 @@ body {
     margin-top: 1rem;
     font-size: 1.2rem; }
 
+.fade {
+  opacity: 0; }
+  .fade-in {
+    animation: fadeIn 1s ease forwards; }
+
 .article {
   max-width: 75rem;
   margin: 7rem auto 11rem; }
@@ -587,6 +600,7 @@ body {
   position: relative;
   background-image: url(../img/hero.jpg);
   background-size: cover;
+  overflow: hidden;
   background-position: right; }
   .header__content {
     position: absolute;
@@ -729,19 +743,25 @@ body {
     display: flex;
     align-items: center; }
     @media only screen and (max-width: 48em) {
-      .nav__links:first-of-type {
-        display: none;
+      .nav__links {
+        opacity: 0;
+        visibility: hidden;
         flex-direction: column;
         width: 100%;
         height: 100vh;
         position: absolute;
         background-image: linear-gradient(to bottom, #7633a4, #250d65);
         top: 50%;
-        left: 50%;
+        left: 150%;
         transform: translate(-50%, -50%);
-        z-index: 3000; } }
+        z-index: 3000;
+        transition: all 0.5s; } }
     .nav__links:last-child {
       justify-content: center; }
+  .nav__open {
+    opacity: 1;
+    visibility: visible;
+    left: 50%; }
   .nav__item {
     font-weight: 700;
     margin-left: 3rem; }
@@ -768,11 +788,22 @@ body {
       width: 3rem;
       height: 2px;
       background-color: #fff;
-      position: absolute; }
+      position: absolute;
+      transition: all 0.4s; }
     .nav__line::before {
       top: -0.7rem; }
     .nav__line::after {
       top: 0.7rem; }
+  .nav__transform {
+    background-color: transparent;
+    transition: all 1s; }
+    .nav__transform::before, .nav__transform::after {
+      top: 0;
+      transition: all 0.4s; }
+    .nav__transform::before {
+      transform: rotate(45deg); }
+    .nav__transform::after {
+      transform: rotate(-45deg); }
 
 .page-header {
   position: relative;
