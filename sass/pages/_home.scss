@@ -16,7 +16,7 @@
 
 .section-news {
 	max-width: 92rem;
-	margin: 7rem auto 0;
+	margin: 7rem auto 10rem;
 
 	@include respond(tab-land) {
 		margin-top: 5rem;
@@ -28,7 +28,7 @@
 
 .section-service {
 	max-width: 110rem;
-	margin: 14rem auto;
+	margin: 0 auto 14rem;
 
 	@include respond(tab) {
 		margin-top: 8rem;
@@ -58,14 +58,14 @@
 
 .section-recruit {
 	max-width: 110rem;
-	margin: 0 auto;
+	margin: 0 auto 10rem;
 	background-color: $bg-grey-4;
 }
 
 .section-contact {
 	background-color: $bg-grey-4;
 	padding: 9rem 0 8rem;
-	margin-top: 10rem;
+	// margin-top: 10rem;
 
 	@include respond(tab) {
 		margin-top: 6rem;

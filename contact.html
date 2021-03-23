@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact | Pon Design</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- Header-Section -->
+		<header class="page-header">
+			<div class="nav">
+				<a href="index.html" class="nav__logo"><img src="img/logo.svg" alt="ロゴ" /></a>
+				<nav class="nav__inner">
+					<ul class="nav__links">
+						<li class="nav__item"><a href="news.html" class="nav__link">news</a></li>
+						<li class="nav__item"><a href="service.html" class="nav__link">service</a></li>
+						<li class="nav__item"><a href="works.html" class="nav__link">works</a></li>
+						<li class="nav__item"><a href="company.html" class="nav__link">company</a></li>
+						<li class="nav__item"><a href="recruit.html" class="nav__link">recruit</a></li>
+						<li class="nav__item"><a href="contact.html" class="nav__link">contact</a></li>
+					</ul>
+				</nav>
+				<div class="nav__line"></div>
+			</div>
+			<div class="page-header__content">
+				<h1 class="heading-tertiary">
+					<span class="heading-tertiary--main">Contact</span>
+					<span class="heading-tertiary--sub">お問い合わせ</span>
+				</h1>
+			</div>
+		</header>
+		<!-- /Header-Section -->
+
+		<!-- BreadCrumb -->
+		<nav>
+			<ol class="breadcrumb">
+				<li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Home</a></li>
+				<li class="breadcrumb__item">Contact</li>
+			</ol>
+		</nav>
+		<!-- BreadCrumb -->
+
+		<main>
+			<section class="contact-page">
+				<p class="u-text-center">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+				<form action="" class="form">
+					<div class="form__group">
+						<p class="form__label">お問い合わせ種別<span class="form__require">必須</span></p>
+						<div class="form__radio-group">
+							<input type="radio" id="job" class="form__radio-input" name="type" required />
+							<label for="job" class="form__radio-label">
+								<span class="form__radio-button"></span>
+								お仕事のご依頼・ご相談
+							</label>
+						</div>
+						<div class="form__radio-group">
+							<input type="radio" id="estimate" class="form__radio-input" name="type" />
+							<label for="estimate" class="form__radio-label">
+								<span class="form__radio-button"></span>
+								お見積りのご依頼
+							</label>
+						</div>
+						<div class="form__radio-group">
+							<input type="radio" id="recruit" class="form__radio-input" name="type" />
+							<label for="recruit" class="form__radio-label">
+								<span class="form__radio-button"></span>
+								採用について
+							</label>
+						</div>
+						<div class="form__radio-group">
+							<input type="radio" id="other" class="form__radio-input" name="type" />
+							<label for="other" class="form__radio-label">
+								<span class="form__radio-button"></span>
+								その他
+							</label>
+						</div>
+					</div>
+
+					<div class="form__group">
+						<p class="form__label">お名前<span class="form__require">必須</span></p>
+						<input type="text" class="form__input" required />
+					</div>
+
+					<div class="form__group">
+						<p class="form__label">会社名</p>
+						<input type="text" class="form__input" />
+					</div>
+
+					<div class="form__group">
+						<p class="form__label">メールアドレス<span class="form__require">必須</span></p>
+						<input type="email" class="form__input" required />
+					</div>
+
+					<div class="form__group">
+						<p class="form__label">お電話番号<span>（半角数字ハイフンなし）</span></p>
+						<input type="tel" class="form__input form__input--tel" />
+					</div>
+
+					<div class="form__group">
+						<p class="form__label">お問い合わせ内容<span class="form__require">必須</span></p>
+						<textarea class="form__textarea" name="" id="" required></textarea>
+					</div>
+
+					<div class="form__group">
+						<p class="form__label">PON DESIGNをどちらでお知りになりましたか？<span class="form__require">必須</span></p>
+						<select name="" id="" class="form__select">
+							<option value="" class="form__option" hidden>選択してください</option>
+							<option value="" class="form__option">Google/Yahoo検索</option>
+							<option value="" class="form__option">SNS</option>
+							<option value="" class="form__option">ブログ</option>
+							<option value="" class="form__option">友人や知人</option>
+							<option value="" class="form__option">その他</option>
+						</select>
+					</div>
+
+					<div class="u-text-center">
+						<button class="btn" type="submit">送信する</button>
+					</div>
+				</form>
+			</section>
+		</main>
+
+		<!-- Footer-Section -->
+		<footer class="footer">
+			<nav class="nav__inner">
+				<ul class="footer__nav">
+					<li class="footer__item"><a href="news.html" class="footer__link">news</a></li>
+					<li class="footer__item"><a href="service.html" class="footer__link">service</a></li>
+					<li class="footer__item"><a href="works.html" class="footer__link">works</a></li>
+					<li class="footer__item"><a href="company.html" class="footer__link">company</a></li>
+					<li class="footer__item"><a href="recruit.html" class="footer__link">recruit</a></li>
+					<li class="footer__item"><a href="contact.html" class="footer__link">contact</a></li>
+				</ul>
+			</nav>
+			<small class="footer__right">&copy; PON DESIGN</small>
+		</footer>
+		<!-- /Footer-Section -->
+	</body>
+</html>

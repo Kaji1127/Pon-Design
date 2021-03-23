@@ -16,13 +16,17 @@
 @import 'components/works';
 @import 'components/breadcrumb';
 @import 'components/overview';
+@import 'components/occupation';
 
 @import 'layout/article';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/form';
 @import 'layout/navigation';
 @import 'layout/page-header';
 
 @import 'pages/home';
+@import 'pages/contact-page';
 @import 'pages/service-page';
 @import 'pages/works-page';
+@import 'pages/recruit-page';

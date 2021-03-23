@@ -1,0 +1,54 @@
+.recruit-page {
+	padding: 13rem 0 11rem;
+	background-image: url(../img/bg-geometry.png);
+
+	@include respond(tab) {
+		padding: 6rem 0;
+	}
+
+	&__heading {
+		color: $color-purple;
+		@include respond(tab) {
+			padding: 0 1rem;
+		}
+		&--main {
+			font-size: 7.2rem;
+			display: block;
+		}
+		&--sub {
+			font-size: 3.2rem;
+			font-weight: 500;
+			letter-spacing: 2px;
+			display: block;
+		}
+	}
+
+	&__text-box {
+		margin-top: 4rem;
+	}
+
+	&__text {
+		line-height: 1.8;
+	}
+
+	&__img-box {
+		width: 100%;
+		height: 78rem;
+		background-image: url(../img/recruit01.jpg);
+		background-size: cover;
+		background-position: center center;
+		clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+		margin-bottom: 7rem;
+
+		@include respond(tab-port-sm) {
+			height: 60rem;
+		}
+		@include respond(tab) {
+			height: 40rem;
+			margin-bottom: 5rem;
+		}
+		@include respond(phone) {
+			height: 30rem;
+		}
+	}
+}

@@ -1,0 +1,71 @@
+.occupation {
+	max-width: 110rem;
+	margin: 0 auto;
+
+	@include respond(tab-port-sm) {
+		padding: 0 4rem;
+	}
+	@include respond(tab) {
+		padding: 0 2rem;
+	}
+
+	&__container {
+		border: 1px solid $bg-purple-light-1;
+		padding: 6rem 0;
+		margin-top: 4rem;
+		background-color: $color-white;
+	}
+	&__title {
+		margin-bottom: 5rem;
+		font-size: 2.4rem;
+	}
+	&__list {
+		max-width: 92rem;
+		margin: 0 auto;
+
+		@include respond(tab-port-sm) {
+			padding: 0 2rem;
+		}
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: 16rem 1fr;
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 3rem;
+		line-height: 1.8;
+
+		@include respond(tab) {
+			row-gap: 1.5rem;
+		}
+
+		&:not(:first-child) {
+			padding-top: 3rem;
+		}
+	}
+	&__overview {
+		font-weight: 700;
+	}
+	&__inner {
+		@include respond(tab) {
+			grid-column: 1 / span 4;
+			grid-row-start: 2;
+		}
+	}
+	&__condition-list {
+		margin-top: 2rem;
+	}
+
+	&__condition {
+		list-style: disc;
+		margin-left: 1.8rem;
+	}
+
+	&__btn {
+		margin-top: 5rem;
+	}
+	&__text {
+		margin-top: 1rem;
+		font-size: 1.2rem;
+	}
+}

@@ -1,0 +1,10 @@
+.contact-page {
+	max-width: 110rem;
+	padding: 7rem 0;
+	@include respond(tab-port-sm) {
+		padding: 5rem 4rem;
+	}
+	@include respond(tab) {
+		padding: 4rem 2rem;
+	}
+}
